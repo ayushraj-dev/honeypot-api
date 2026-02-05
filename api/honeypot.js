@@ -111,7 +111,8 @@ if (req.body?.message) {
     const llmReasoningEngine = (analysis, intelligence) => {
       const steps = [
         "Initializing lexical analyzer...",
-        `Parsed input stream (${req.body.message.length} bytes).`,
+        `Parsed input stream (${message.length} bytes).`,
+
       ];
 
       if (analysis.detected_keywords.length > 0) {
@@ -232,5 +233,6 @@ if (req.body?.message) {
     agent_response: "Validation successful."
   });
 }
+
 
 
