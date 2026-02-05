@@ -1,6 +1,10 @@
 export default function handler(req, res) {
   // 1. CORS Configuration
+
+  
   // allow * for hackathon testing purposes
+
+  
   res.setHeader('Access-Control-Allow-Credentials', true);
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -111,4 +115,5 @@ export default function handler(req, res) {
       details: error.message
     });
   }
+
 }
